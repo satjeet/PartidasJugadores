@@ -1,0 +1,29 @@
+
+<template name="ApplicationLayout">
+
+<head>
+  <title>Super Ingreso</title>
+
+  <!-- include jquery, bootstrap and our stylesheet -->
+  <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+
+</head>
+
+
+<div class="body">
+	{{> header}}
+
+	<div class="top-margin">
+ 	 {{> yield }}
+    
+  	</div>
+
+
+	{{> footer}}
+</div>
+
+
+
+
+</template>

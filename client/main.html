@@ -1,0 +1,57 @@
+
+  
+<template name="header">
+{{>navbar}}
+</template>
+
+<template name="footer">
+
+</template>
+
+
+
+<template name="main " class="top-margin">
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-xs-6">
+
+                {{> CrearPartida }}
+                <br>
+                {{> UnirsePartida }}
+            </div> <!-- fin columna -->
+
+            <div class="col-md-6 col-xs-6">
+
+                {{> ListaPartidas }}
+
+            </div> <!-- fin columna -->
+
+        </div><!-- fin row -->
+    </div><!-- fin container -->
+</template>
+
+
+
+<template name='ListaPartidas'>
+    <div class="container">
+        <div class="row">
+            <h1> Lista de Partidas</h1>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-5 col-sm-offset-2 col-md-6 col-md-offset-1">
+                {{#each alter in alternativas}}
+                 <div class="row">
+                    <button> {{alter.npartida}} </button>
+                 </div>
+                {{/each}}
+            </div>
+        </div>
+       
+
+    </div>
+        
+    
+</template>
